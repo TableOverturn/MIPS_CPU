@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+F:/MIPS_CPU/vga_controller/verilog/LogisimClockComponent.v,1616082901,verilog,,F:/MIPS_CPU/vga_controller/verilog/LogisimTickGenerator.v,,LogisimClockComponent,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/LogisimTickGenerator.v,1616082901,verilog,,F:/MIPS_CPU/vga_controller/verilog/vga_TopLevelShell.v,,LogisimTickGenerator,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/bittobyte.v,1619154413,verilog,,F:/MIPS_CPU/vga_controller/verilog/vga_TopLevelShell.v,,bittobyte_vga,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/tb_vga_TopLevelShell.v,1619092442,verilog,,,,tb_vga_ToplevelShell,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/vga_TopLevelShell.v,1619154261,verilog,,F:/MIPS_CPU/vga_controller/verilog/vga_controller.v,,vga_ToplevelShell,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/vga_controller.v,1619093133,verilog,,F:/MIPS_CPU/vga_controller/verilog/vga_counter.v,,vga_controller,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/vga_counter.v,1618878463,verilog,,F:/MIPS_CPU/vga_controller/verilog/vga_sync.v,,vga_counter,,,,,,,,
+F:/MIPS_CPU/vga_controller/verilog/vga_sync.v,1619077317,verilog,,F:/MIPS_CPU/vga_controller/verilog/tb_vga_TopLevelShell.v,,vga_sync,,,,,,,,
+F:/MIPS_CPU/vga_controller/vga_controller/vga_controller.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,

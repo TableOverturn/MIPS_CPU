@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX8
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Mar 19 00:36:13 2021    F:/MIPS_CPU/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit

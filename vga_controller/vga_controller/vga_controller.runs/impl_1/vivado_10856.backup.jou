@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 23 14:34:10 2021
+# Process ID: 10856
+# Current directory: F:/MIPS_CPU/vga_controller/vga_controller/vga_controller.runs/impl_1
+# Command line: vivado.exe -log vga_ToplevelShell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_ToplevelShell.tcl -notrace
+# Log file: F:/MIPS_CPU/vga_controller/vga_controller/vga_controller.runs/impl_1/vga_ToplevelShell.vdi
+# Journal file: F:/MIPS_CPU/vga_controller/vga_controller/vga_controller.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_ToplevelShell.tcl -notrace

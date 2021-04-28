@@ -1,0 +1,11 @@
+/bin/*
+/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.cache/*
+/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.hw/*
+/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.ip_user_files/*
+/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.runs/*
+/transfer/cpu24_verilog/redirection_pipeline_with_BTB/mips_cpu/mips_cpu.sim/*
+/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.cache/*
+/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.hw/*
+/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.ip_user_files/*
+/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.runs/*
+/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/*

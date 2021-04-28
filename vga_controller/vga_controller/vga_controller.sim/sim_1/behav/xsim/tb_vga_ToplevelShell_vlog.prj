@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../verilog/LogisimClockComponent.v" \
+"../../../../../verilog/LogisimTickGenerator.v" \
+"../../../../../verilog/vga_TopLevelShell.v" \
+"../../../../../verilog/vga_controller.v" \
+"../../../../../verilog/vga_counter.v" \
+"../../../../../verilog/vga_sync.v" \
+"../../../../../verilog/tb_vga_TopLevelShell.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

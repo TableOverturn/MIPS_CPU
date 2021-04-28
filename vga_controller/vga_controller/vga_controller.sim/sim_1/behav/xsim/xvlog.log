@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/LogisimClockComponent.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimClockComponent
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/LogisimTickGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimTickGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/vga_TopLevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/vga_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/vga_controller/verilog/tb_vga_TopLevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_vga_ToplevelShell
