@@ -27,6 +27,7 @@ module vga_sync (
             addr <= 9'h000;
         end
         //one 8-bit RGB color byte is not mapped to a single pixel but a 8*8 matrix.
+        //we only use the centered 128*256 area
         else if ((vcnt >= 143) & (vcnt <= 398) & (hcnt >= 400) & (hcnt <= 527)) begin
             if(hcnt == 9'd400)
                 addr <= line_start;
@@ -45,7 +46,7 @@ module vga_sync (
                     addr <= addr + 1;
             end
         end
-        else
+        else 
             addr <= 9'h000;
     end
 endmodule

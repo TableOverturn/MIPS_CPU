@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="f:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.xpr">
+<Project Version="7" Minor="38" Path="F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="bc52ad933af246cabd7ac905309a104b"/>
@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="268"/>
+    <Option Name="WTXSimLaunchSim" Val="274"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>

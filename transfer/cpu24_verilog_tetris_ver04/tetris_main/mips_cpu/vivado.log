@@ -1,0 +1,813 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 26 22:09:22 2021
+# Process ID: 23940
+# Current directory: F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14288 F:\MIPS_CPU\transfer\cpu24_verilog_tetris_ver04\tetris_main\mips_cpu\mips_cpu.xpr
+# Log file: F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/vivado.log
+# Journal file: F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 925.320 ; gain = 180.824
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed May 26 22:12:15 2021] Launched synth_1...
+Run output will be captured here: F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.runs/synth_1/runme.log
+[Wed May 26 22:12:15 2021] Launched impl_1...
+Run output will be captured here: F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.runs/impl_1/runme.log
+open_bd_design {F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.srcs/sources_1/bd/tetris_with_input/tetris_with_input.bd}
+Adding cell -- xilinx.com:ip:fifo_generator:13.2 - keyboard_fifo_simulator
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /keyboard_fifo_simulatorExecuting the post_config_ip from bd
+Successfully read diagram <tetris_with_input> from BD file <F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.srcs/sources_1/bd/tetris_with_input/tetris_with_input.bd>
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 971.984 ; gain = 2.758
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B49CA
+set_property PROGRAM.FILE {F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.runs/impl_1/LogisimToplevelShell.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B49CA
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LogisimToplevelShell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LogisimToplevelShell_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.ip_user_files/bd/tetris_with_input/ip/tetris_with_input_fifo_generator_0_0/sim/tetris_with_input_fifo_generator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_with_input_fifo_generator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.ip_user_files/bd/tetris_with_input/sim/tetris_with_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_with_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ALU_controller_autogen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_controller_autogen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_12_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_12_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/BitSelector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitSelector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_5_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_5_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_7_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_7_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_SIGN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_SIGN
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Demultiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demultiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/FPGADigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPGADigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/base/LogisimClockComponent.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimClockComponent
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/base/LogisimTickGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimTickGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/toplevel/LogisimToplevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MAX3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAX3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOR_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOT_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_12_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_12_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_20_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_20_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_9_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_9_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/PC_update_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_update_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Priority_Encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_lower_byte_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_lower_byte_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_upper_byte_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_upper_byte_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_vga_sec_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_vga_sec_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_EPC_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_INM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_INM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_INT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_INT
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_LATCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_LATCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/ROM_IR_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_IR_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/XOR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/bitmap_get.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitmap_get
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ctrl_sig_autogen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_sig_autogen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/data_bypass_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_bypass_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/display_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/dual_bit_predction_with_state_shifting_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_bit_predction_with_state_shifting_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/led_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/led_driver_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_driver_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/multistage_interruption_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multistage_interruption_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/pipeline_conflict_deal_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_conflict_deal_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/reg_choose_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_choose_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/sc_hard_wired_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sc_hard_wired_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/sevenseg_dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/syscall_process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syscall_process
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/tetris_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_TopLevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/vga_sec_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sec_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/toplevel/tb_LogisimToplevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LogisimToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_LogisimToplevelShell_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1660.406 ; gain = 4.496
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc52ad933af246cabd7ac905309a104b --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LogisimToplevelShell_behav xil_defaultlib.tb_LogisimToplevelShell xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LogisimTickGenerator(NrOfBits=32...
+Compiling module xil_defaultlib.LogisimClockComponent
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.OR_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_5_32
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.ROM_IR_ROM
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=32)
+Compiling module xil_defaultlib.XOR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_7_32
+Compiling module xil_defaultlib.Bit_Extender
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display_sel
+Compiling module xil_defaultlib.sevenseg_dec
+Compiling module xil_defaultlib.FPGADigit
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_SIGN
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.MIPS_ALU
+Compiling module xil_defaultlib.syscall_process
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.RAM_vga_sec_ram
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.Multiplexer_32
+Compiling module xil_defaultlib.vga_sec_ram
+Compiling module xil_defaultlib.Comparator(NrOfBits=6)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.Priority_Encoder(NrOfInputBits=4...
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=6)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=2)
+Compiling module xil_defaultlib.pipeline_conflict_deal_logic
+Compiling module xil_defaultlib.data_bypass_controller
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=2)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=4)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=2)
+Compiling module xil_defaultlib.Decoder_4
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=3)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_INT(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_INM(NrOfBits=...
+Compiling module xil_defaultlib.AND_GATE_BUS(BubblesMask=0,NrOfB...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC_Top(NrOfB...
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=3)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=3)
+Compiling module xil_defaultlib.NOT_GATE_BUS(NrOfBits=3)
+Compiling module xil_defaultlib.multistage_interruption_support
+Compiling module xil_defaultlib.reg_choose_logic
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=16)
+Compiling module xil_defaultlib.Decoder_2
+Compiling module xil_defaultlib.RAM_upper_byte_RAM
+Compiling module xil_defaultlib.Demultiplexer_bus_2(NrOfBits=16)
+Compiling module xil_defaultlib.RAM_lower_byte_RAM
+Compiling module xil_defaultlib.MIPS_MEM
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_12_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_12_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.ALU_controller_autogen
+Compiling module xil_defaultlib.OR_GATE_20_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_9_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_10_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.ctrl_sig_autogen
+Compiling module xil_defaultlib.sc_hard_wired_controller
+Compiling module xil_defaultlib.MIPS_Regifile
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=4)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=15)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=15)
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.NOR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.PC_update_logic
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=6)
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=3)
+Compiling module xil_defaultlib.Decoder_16
+Compiling module xil_defaultlib.AND_GATE_BUS(BubblesMask=0,NrOfB...
+Compiling module xil_defaultlib.NOT_GATE_BUS(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE_BUS(BubblesMask=0,NrOfBi...
+Compiling module xil_defaultlib.led_driver_unit
+Compiling module xil_defaultlib.led_driver
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.BitSelector(NrOfExtendedBits=33,...
+Compiling module xil_defaultlib.BitSelector(NrOfExtendedBits=17,...
+Compiling module xil_defaultlib.bitmap_get
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_8(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=65...
+Compiling module xil_defaultlib.NOR_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Priority_Encoder(NrOfInputBits=8...
+Compiling module xil_defaultlib.OR_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Decoder_8
+Compiling module xil_defaultlib.REGISTER_LATCH
+Compiling module xil_defaultlib.dual_bit_predction_with_state_sh...
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.MAX3
+Compiling module xil_defaultlib.BTB
+Compiling module xil_defaultlib.tetris_main
+Compiling module xil_defaultlib.LogisimTickGenerator(NrOfBits=32...
+Compiling module xil_defaultlib.vga_counter
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.vga_controller
+Compiling module xil_defaultlib.vga_ToplevelShell
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=7)
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_s...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_p...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_COMMON_...
+Compiling module xil_defaultlib.tetris_with_input_fifo_generator...
+Compiling module xil_defaultlib.tetris_with_input
+Compiling module xil_defaultlib.LogisimToplevelShell
+Compiling module xil_defaultlib.tb_LogisimToplevelShell
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_LogisimToplevelShell_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim/xsim.dir/tb_LogisimToplevelShell_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 26 22:34:24 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1660.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_LogisimToplevelShell_behav -key {Behavioral:sim_1:Functional:tb_LogisimToplevelShell} -tclbatch {tb_LogisimToplevelShell.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_LogisimToplevelShell.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_LogisimToplevelShell_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1682.586 ; gain = 26.676
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ms
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1690.422 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ms
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 1692.461 ; gain = 0.328
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 17 ms
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1694.668 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_LogisimToplevelShell' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_LogisimToplevelShell_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.ip_user_files/bd/tetris_with_input/ip/tetris_with_input_fifo_generator_0_0/sim/tetris_with_input_fifo_generator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_with_input_fifo_generator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.ip_user_files/bd/tetris_with_input/sim/tetris_with_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_with_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ALU_controller_autogen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_controller_autogen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_12_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_12_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/AND_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/BitSelector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitSelector
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_5_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_5_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_7_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_7_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/wiring/Bit_Extender_SIGN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bit_Extender_SIGN
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Decoder_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Demultiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demultiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/FPGADigit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPGADigit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/base/LogisimClockComponent.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimClockComponent
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/LogisimCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/base/LogisimTickGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimTickGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/toplevel/LogisimToplevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogisimToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MAX3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAX3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/MIPS_Regifile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_Regifile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Multiplexer_bus_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_bus_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOR_GATE_5_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_GATE_5_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOR_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOR_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOT_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/NOT_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NOT_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_10_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_10_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_12_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_12_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_20_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_20_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_3_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_3_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_4_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_4_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_6_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_6_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_7_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_7_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_8_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_8_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_9_INPUTS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_9_INPUTS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/OR_GATE_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_GATE_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/PC_update_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_update_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/plexers/Priority_Encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_lower_byte_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_lower_byte_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_upper_byte_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_upper_byte_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/RAM_vga_sec_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_vga_sec_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_EPC_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_EPC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_INM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_INM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_INT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_INT
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_FLIP_FLOP_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_FLIP_FLOP_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/REGISTER_LATCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER_LATCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/memory/ROM_IR_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_IR_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/arithmetic/Shifter_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/gates/XOR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_GATE
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/bitmap_get.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitmap_get
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/ctrl_sig_autogen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_sig_autogen
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/data_bypass_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_bypass_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/display_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/dual_bit_predction_with_state_shifting_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_bit_predction_with_state_shifting_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/led_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/led_driver_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_driver_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/multistage_interruption_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multistage_interruption_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/pipeline_conflict_deal_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_conflict_deal_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/reg_choose_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_choose_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/sc_hard_wired_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sc_hard_wired_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/io/sevenseg_dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/syscall_process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syscall_process
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/tetris_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tetris_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_TopLevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ToplevelShell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/circuit/vga_sec_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sec_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/vga_controller/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/verilog/toplevel/tb_LogisimToplevelShell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LogisimToplevelShell
+"xvhdl --incr --relax -prj tb_LogisimToplevelShell_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1699.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1699.852 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/MIPS_CPU/transfer/cpu24_verilog_tetris_ver04/tetris_main/mips_cpu/mips_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto bc52ad933af246cabd7ac905309a104b --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LogisimToplevelShell_behav xil_defaultlib.tb_LogisimToplevelShell xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LogisimTickGenerator(NrOfBits=32...
+Compiling module xil_defaultlib.LogisimClockComponent
+Compiling module xil_defaultlib.Adder(ExtendedBits=33,NrOfBits=3...
+Compiling module xil_defaultlib.AND_GATE
+Compiling module xil_defaultlib.OR_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_5_32
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.ROM_IR_ROM
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=32)
+Compiling module xil_defaultlib.XOR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.NOT_GATE
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_7_32
+Compiling module xil_defaultlib.Bit_Extender
+Compiling module xil_defaultlib.OR_GATE(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=5)
+Compiling module xil_defaultlib.divider(N=5000)
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display_sel
+Compiling module xil_defaultlib.sevenseg_dec
+Compiling module xil_defaultlib.FPGADigit
+Compiling module xil_defaultlib.Comparator(NrOfBits=32)
+Compiling module xil_defaultlib.Bit_Extender_SIGN
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_PC(NrOfBits=3...
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.MIPS_ALU
+Compiling module xil_defaultlib.syscall_process
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=4)
+Compiling module xil_defaultlib.RAM_vga_sec_ram
+Compiling module xil_defaultlib.Multiplexer_bus_16(NrOfBits=32)
+Compiling module xil_defaultlib.Multiplexer_32
+Compiling module xil_defaultlib.vga_sec_ram
+Compiling module xil_defaultlib.Comparator(NrOfBits=6)
+Compiling module xil_defaultlib.AND_GATE(BubblesMask=2)
+Compiling module xil_defaultlib.Priority_Encoder(NrOfInputBits=4...
+Compiling module xil_defaultlib.Comparator(NrOfBits=5)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=6)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=2)
+Compiling module xil_defaultlib.pipeline_conflict_deal_logic
+Compiling module xil_defaultlib.data_bypass_controller
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=2)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=4)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=2)
+Compiling module xil_defaultlib.Decoder_4
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=3)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_INT(NrOfBits=...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_INM(NrOfBits=...
+Compiling module xil_defaultlib.AND_GATE_BUS(BubblesMask=0,NrOfB...
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP_EPC_Top(NrOfB...
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=3)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=3)
+Compiling module xil_defaultlib.NOT_GATE_BUS(NrOfBits=3)
+Compiling module xil_defaultlib.multistage_interruption_support
+Compiling module xil_defaultlib.reg_choose_logic
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=16)
+Compiling module xil_defaultlib.Decoder_2
+Compiling module xil_defaultlib.RAM_upper_byte_RAM
+Compiling module xil_defaultlib.Demultiplexer_bus_2(NrOfBits=16)
+Compiling module xil_defaultlib.RAM_lower_byte_RAM
+Compiling module xil_defaultlib.MIPS_MEM
+Compiling module xil_defaultlib.AND_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.AND_GATE_12_INPUTS(BubblesMask=0...
+Compiling module xil_defaultlib.OR_GATE_7_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_12_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.ALU_controller_autogen
+Compiling module xil_defaultlib.OR_GATE_20_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_9_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_10_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.ctrl_sig_autogen
+Compiling module xil_defaultlib.sc_hard_wired_controller
+Compiling module xil_defaultlib.MIPS_Regifile
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=4)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=5)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=15)
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=15)
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.NOR_GATE_5_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.OR_GATE_6_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.PC_update_logic
+Compiling module xil_defaultlib.Multiplexer_bus_2(NrOfBits=6)
+Compiling module xil_defaultlib.REGISTER_FLIP_FLOP(NrOfBits=6)
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=0)
+Compiling module xil_defaultlib.Shifter_32_bit(ShifterMode=3)
+Compiling module xil_defaultlib.Decoder_16
+Compiling module xil_defaultlib.AND_GATE_BUS(BubblesMask=0,NrOfB...
+Compiling module xil_defaultlib.NOT_GATE_BUS(NrOfBits=32)
+Compiling module xil_defaultlib.OR_GATE_BUS(BubblesMask=0,NrOfBi...
+Compiling module xil_defaultlib.led_driver_unit
+Compiling module xil_defaultlib.led_driver
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.BitSelector(NrOfExtendedBits=33,...
+Compiling module xil_defaultlib.BitSelector(NrOfExtendedBits=17,...
+Compiling module xil_defaultlib.bitmap_get
+Compiling module xil_defaultlib.OR_GATE_4_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Multiplexer_bus_8(NrOfBits=32)
+Compiling module xil_defaultlib.AND_GATE_3_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.LogisimCounter(mode=0,max_val=65...
+Compiling module xil_defaultlib.NOR_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Priority_Encoder(NrOfInputBits=8...
+Compiling module xil_defaultlib.OR_GATE_8_INPUTS(BubblesMask=0)
+Compiling module xil_defaultlib.Decoder_8
+Compiling module xil_defaultlib.REGISTER_LATCH
+Compiling module xil_defaultlib.dual_bit_predction_with_state_sh...
+Compiling module xil_defaultlib.Comparator(TwosComplement=0,NrOf...
+Compiling module xil_defaultlib.MAX3
+Compiling module xil_defaultlib.BTB
+Compiling module xil_defaultlib.tetris_main
+Compiling module xil_defaultlib.LogisimTickGenerator(NrOfBits=32...
+Compiling module xil_defaultlib.vga_counter
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.vga_controller
+Compiling module xil_defaultlib.vga_ToplevelShell
+Compiling module xil_defaultlib.Multiplexer_bus_4(NrOfBits=7)
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_s...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_p...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_COMMON_...
+Compiling module xil_defaultlib.tetris_with_input_fifo_generator...
+Compiling module xil_defaultlib.tetris_with_input
+Compiling module xil_defaultlib.LogisimToplevelShell
+Compiling module xil_defaultlib.tb_LogisimToplevelShell
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_LogisimToplevelShell_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.852 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1702.012 ; gain = 2.160
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 17 ms
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1702.570 ; gain = 0.402
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 26 22:52:19 2021...
